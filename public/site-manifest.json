@@ -1,0 +1,31 @@
+{
+  "name": "603 Design Phantom",
+  "short_name": "603DPhantom",
+  "description": "603 Design Phantom - Interactive 3D Web Experience",
+  "start_url": "/603DPhantom/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/603DPhantom/",
+  "icons": [
+    {
+      "src": "/603DPhantom/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/603DPhantom/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/603DPhantom/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["design", "portfolio", "3d", "interactive"],
+  "lang": "en-US"
+}

@@ -10,6 +10,9 @@ const inter = Inter({
   display: "swap", // Recommended for font loading UX
 });
 
+// Get the base path for GitHub Pages
+const basePath = process.env.NODE_ENV === 'production' ? '/603DPhantom' : '';
+
 export const metadata = {
   title: {
     template: "%s | 603D - Phantom",
@@ -18,20 +21,20 @@ export const metadata = {
   description:
     "603D - Phantom - Digital architect transforming ideas into immersive experiences with cutting-edge technology.",
   
-  // Favicon and icon metadata
+  // Favicon and icon metadata - Fixed with basePath
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.ico', sizes: 'any' }
+      { url: `${basePath}/favicon-16x16.png`, sizes: '16x16', type: 'image/png' },
+      { url: `${basePath}/favicon-32x32.png`, sizes: '32x32', type: 'image/png' },
+      { url: `${basePath}/favicon.ico`, sizes: 'any' }
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+      { url: `${basePath}/apple-touch-icon.png`, sizes: '180x180', type: 'image/png' }
     ],
   },
   
-  // Additional metadata for better SEO and mobile experience
-  manifest: '/site.webmanifest', // You can create this later for PWA features
+  // Additional metadata for better SEO and mobile experience - Fixed with basePath
+  manifest: `${basePath}/site.webmanifest`,
 };
 
 export const viewport = {

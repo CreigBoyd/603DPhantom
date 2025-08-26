@@ -4,6 +4,9 @@ import { Volume2, VolumeX } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
+// Get the base path for GitHub Pages
+const basePath = process.env.NODE_ENV === 'production' ? '/603DPhantom' : '';
+
 const Modal = ({ onClose, toggle }) => {
   return createPortal(
     <div className="fixed inset-0 bg-background/60 backdrop-blur-sm flex items-center justify-center">
@@ -29,7 +32,6 @@ const Modal = ({ onClose, toggle }) => {
         </div>
       </div>
     </div>,
-
     document.getElementById("my-modal")
   );
 };
@@ -38,30 +40,27 @@ const Sound = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
-
+  
   const handleFirstUserInteraction = () => {
     const musicConsent = localStorage.getItem("musicConsent");
     if (musicConsent === "true" && !isPlaying) {
       audioRef.current.play();
       setIsPlaying(true);
     }
-
     ["click", "keydown", "touchstart"].forEach((event) =>
       document.removeEventListener(event, handleFirstUserInteraction)
     );
   };
-
+  
   useEffect(() => {
     const consent = localStorage.getItem("musicConsent");
     const consentTime = localStorage.getItem("consentTime");
-
     if (
       consent &&
       consentTime &&
       new Date(consentTime).getTime() + 3 * 24 * 60 * 60 * 1000 > new Date()
     ) {
       setIsPlaying(consent === "true");
-
       if (consent === "true") {
         ["click", "keydown", "touchstart"].forEach((event) =>
           document.addEventListener(event, handleFirstUserInteraction)
@@ -71,7 +70,7 @@ const Sound = () => {
       setShowModal(true);
     }
   }, []);
-
+  
   const toggle = () => {
     const newState = !isPlaying;
     setIsPlaying(!isPlaying);
@@ -80,14 +79,14 @@ const Sound = () => {
     localStorage.setItem("consentTime", new Date().toISOString());
     setShowModal(false);
   };
+  
   return (
     <div className="fixed top-4 right-2.5 xs:right-4 z-50 group">
       {showModal && (
         <Modal onClose={() => setShowModal(false)} toggle={toggle} />
       )}
-
       <audio ref={audioRef} loop>
-        <source src={"/audio/birds39-forest-20772.mp3"} type="audio/mpeg" />
+        <source src={`${basePath}/audio/birds39-forest-20772.mp3`} type="audio/mpeg" />
         your browser does not support the audio element.
       </audio>
       <motion.button

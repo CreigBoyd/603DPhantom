@@ -279,12 +279,12 @@ export default function Home() {
               <div className="testimonial-container max-w-4xl mx-auto">
                 <div className="testimonial-slide active bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm relative overflow-hidden">
                   {/* Quote decoration */}
-                  <div className="absolute top-6 left-8 text-6xl text-cyan-400/20 font-serif">"</div>
-                  <div className="absolute bottom-6 right-8 text-6xl text-blue-400/20 font-serif rotate-180">"</div>
+                  <div className="absolute top-6 left-8 text-6xl text-cyan-400/20 font-serif">&ldquo;</div>
+                  <div className="absolute bottom-6 right-8 text-6xl text-blue-400/20 font-serif rotate-180">&rdquo;</div>
                   
                   <div className="relative z-10">
                     <blockquote className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-8 pl-8">
-                      "603D transformed our digital presence completely. The attention to detail and innovative approach exceeded all expectations. The 3D interactive elements they created are simply breathtaking."
+                      &ldquo;603D transformed our digital presence completely. The attention to detail and innovative approach exceeded all expectations. The 3D interactive elements they created are simply breathtaking.&rdquo;
                     </blockquote>
                     
                     <div className="flex items-center">
@@ -307,12 +307,12 @@ export default function Home() {
                 </div>
                 
                 <div className="testimonial-slide bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm relative overflow-hidden">
-                  <div className="absolute top-6 left-8 text-6xl text-blue-400/20 font-serif">"</div>
-                  <div className="absolute bottom-6 right-8 text-6xl text-indigo-400/20 font-serif rotate-180">"</div>
+                  <div className="absolute top-6 left-8 text-6xl text-blue-400/20 font-serif">&ldquo;</div>
+                  <div className="absolute bottom-6 right-8 text-6xl text-indigo-400/20 font-serif rotate-180">&rdquo;</div>
                   
                   <div className="relative z-10">
                     <blockquote className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-8 pl-8">
-                      "Working with 603D was a game-changer for our startup. The modern, sleek design and flawless functionality helped us secure our Series A funding. Absolutely phenomenal work!"
+                      &ldquo;Working with 603D was a game-changer for our startup. The modern, sleek design and flawless functionality helped us secure our Series A funding. Absolutely phenomenal work!&rdquo;
                     </blockquote>
                     
                     <div className="flex items-center">
@@ -335,12 +335,12 @@ export default function Home() {
                 </div>
                 
                 <div className="testimonial-slide bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm relative overflow-hidden">
-                  <div className="absolute top-6 left-8 text-6xl text-indigo-400/20 font-serif">"</div>
-                  <div className="absolute bottom-6 right-8 text-6xl text-purple-400/20 font-serif rotate-180">"</div>
+                  <div className="absolute top-6 left-8 text-6xl text-indigo-400/20 font-serif">&ldquo;</div>
+                  <div className="absolute bottom-6 right-8 text-6xl text-purple-400/20 font-serif rotate-180">&rdquo;</div>
                   
                   <div className="relative z-10">
                     <blockquote className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-8 pl-8">
-                      "The level of creativity and technical expertise 603D brings is unmatched. Our e-commerce platform saw a 300% increase in engagement after the redesign. Simply outstanding!"
+                      &ldquo;The level of creativity and technical expertise 603D brings is unmatched. Our e-commerce platform saw a 300% increase in engagement after the redesign. Simply outstanding!&rdquo;
                     </blockquote>
                     
                     <div className="flex items-center">

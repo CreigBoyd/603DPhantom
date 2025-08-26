@@ -92,7 +92,7 @@ const EMAILJS_CONFIG = {
         } else if (error.text.includes('template')) {
           errorMessage = "🔧 Email template issue. Please contact us directly.";
         } else if (error.text.includes('service')) {
-          errorMessage = "📧 Email service temporarily unavailable. Please try again later.";
+          errorMessage = "🔧 Email service temporarily unavailable. Please try again later.";
         }
       }
       
@@ -243,17 +243,27 @@ const EMAILJS_CONFIG = {
           variants={item}
           disabled={isSubmitting}
           type="submit"
-          className="px-12 py-4 rounded-md shadow-lg bg-background border border-accent/30 border-solid
-          hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer capitalize
-          hover:bg-accent/10 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-background
-          font-medium tracking-wide flex items-center gap-2 min-w-[160px] justify-center"
+          className="px-12 py-4 rounded-md shadow-lg text-white font-medium tracking-wide
+          bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 
+          border border-blue-400/30 backdrop-blur-sm
+          hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:border-blue-300/50
+          hover:bg-gradient-to-br hover:from-blue-500 hover:via-blue-600 hover:to-blue-700
+          focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:shadow-[0_0_15px_rgba(59,130,246,0.4)]
+          disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-lg disabled:hover:border-blue-400/30
+          transition-all duration-300 capitalize cursor-pointer
+          flex items-center gap-2 min-w-[160px] justify-center
+          relative overflow-hidden group"
           whileHover={!isSubmitting ? { scale: 1.02 } : {}}
           whileTap={!isSubmitting ? { scale: 0.98 } : {}}
         >
+          {/* Subtle animated glow effect */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-300/10 to-transparent 
+                         translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+          
           {isSubmitting ? (
             <>
               <motion.div
-                className="w-4 h-4 border-2 border-accent/30 border-t-accent rounded-full"
+                className="w-4 h-4 border-2 border-blue-200/30 border-t-blue-200 rounded-full"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
               />

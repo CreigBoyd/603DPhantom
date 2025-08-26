@@ -1,0 +1,21 @@
+{
+  "name": "603D - Phantom",
+  "short_name": "603D",
+  "description": "Digital architect transforming ideas into immersive experiences",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F2A3A",
+  "theme_color": "#4A90E2",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

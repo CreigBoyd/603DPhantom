@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="144px"
+   height="162px"
+   viewBox="0 0 144 162"
+   enable-background="new 0 0 144 162"
+   xml:space="preserve"
+   sodipodi:docname="head.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs10"><linearGradient
+     id="linearGradient13"
+     inkscape:collect="always"><stop
+       style="stop-color:#398c8c;stop-opacity:1;"
+       offset="0"
+       id="stop13" /><stop
+       style="stop-color:#8c6239;stop-opacity:0;"
+       offset="1"
+       id="stop14" /></linearGradient><linearGradient
+     id="linearGradient11"
+     inkscape:collect="always"><stop
+       style="stop-color:#8c6239;stop-opacity:1;"
+       offset="0"
+       id="stop11" /><stop
+       style="stop-color:#8c6239;stop-opacity:0;"
+       offset="1"
+       id="stop12" /></linearGradient><linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient11"
+     id="linearGradient12"
+     x1="1"
+     y1="25"
+     x2="60"
+     y2="25"
+     gradientUnits="userSpaceOnUse" /><linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient13"
+     id="linearGradient14"
+     x1="15"
+     y1="134.5"
+     x2="125"
+     y2="134.5"
+     gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
+   id="namedview10"
+   pagecolor="#505050"
+   bordercolor="#eeeeee"
+   borderopacity="1"
+   inkscape:showpageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#505050"
+   inkscape:zoom="3.1049383"
+   inkscape:cx="71.982107"
+   inkscape:cy="81"
+   inkscape:window-width="1366"
+   inkscape:window-height="705"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g10" />
+<g
+   id="g10">
+	<rect
+   x="15"
+   y="31"
+   fill="#EFCAA0"
+   width="110"
+   height="76"
+   id="rect1" />
+	<rect
+   x="43"
+   y="63"
+   width="11"
+   height="22"
+   id="rect2"
+   style="fill:#90354d;fill-opacity:0.73092371" />
+	<rect
+   x="86"
+   y="63"
+   width="11"
+   height="22"
+   id="rect3"
+   style="fill:#90354d;fill-opacity:0.73092371" />
+	<rect
+   x="65"
+   fill="#8C6239"
+   width="79"
+   height="47"
+   id="rect4"
+   style="fill:#8c6239;fill-opacity:0.44979921" />
+	<rect
+   x="1"
+   y="7"
+   fill="#8C6239"
+   width="59"
+   height="36"
+   id="rect5"
+   style="fill:url(#linearGradient12);fill-opacity:1" />
+	<rect
+   x="125"
+   y="74"
+   fill="#EFCAA0"
+   width="15"
+   height="22"
+   id="rect6" />
+	<rect
+   x="118"
+   y="31"
+   fill="#8C6239"
+   width="13"
+   height="51"
+   id="rect7"
+   style="fill:#8c6239;fill-opacity:0.72289157" />
+	<path
+   fill="#8C6239"
+   d="M125,107c0,30-24.6,55-55,55s-55-25-55-55c0,0,24.6,0,55,0S125,107,125,107z"
+   id="path7"
+   style="fill:url(#linearGradient14)" />
+	<rect
+   x="54"
+   y="118"
+   fill="#EFCAA0"
+   width="32"
+   height="11"
+   id="rect8" />
+	<rect
+   y="74"
+   fill="#EFCAA0"
+   width="19"
+   height="22"
+   id="rect9" />
+	<rect
+   x="9"
+   y="36"
+   fill="#8C6239"
+   width="14"
+   height="46"
+   id="rect10"
+   style="fill:#8c6239;fill-opacity:0.76305223" />
+</g>
+</svg>

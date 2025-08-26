@@ -4,6 +4,9 @@
 import React, { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import Logo603D from '../logo603D/Logo603D';
 
+// Get the base path for GitHub Pages
+const basePath = process.env.NODE_ENV === 'production' ? '/603DPhantom' : '';
+
 // Custom hooks from the original script
 const useHover = () => {
   const ref = useRef();
@@ -73,14 +76,14 @@ const MouseGrabbingLogo = () => {
   const mousePos = useMousePosition();
   const [armRef, armPosition] = usePosition();
 
-  // SVG asset paths - you'll need to put your SVG files in the public folder
+  // SVG asset paths - Fixed with basePath for GitHub Pages
   const ASSETS = {
-    head: "/svg/head2.svg",
-    waiting: "/svg/hand.svg",
-    stalking: "/svg/hand-waiting.svg",
-    grabbing: "/svg/hand.svg",
-    grabbed: "/svg/hand-with-cursor.svg",
-    shaka: "/svg/hand-surfs-up.svg"
+    head: `${basePath}/svg/head2.svg`,
+    waiting: `${basePath}/svg/hand.svg`,
+    stalking: `${basePath}/svg/hand-waiting.svg`,
+    grabbing: `${basePath}/svg/hand.svg`,
+    grabbed: `${basePath}/svg/hand-with-cursor.svg`,
+    shaka: `${basePath}/svg/hand-surfs-up.svg`
   };
 
   // Determine the grabber state

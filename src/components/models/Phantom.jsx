@@ -3,9 +3,12 @@ import React, { useRef, useEffect, useState } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
+// Get the base path for GitHub Pages
+const basePath = process.env.NODE_ENV === 'production' ? '/603DPhantom' : '';
+
 export default function Phantom(props) {
-  // Load the phantom model from the public/models folder
-  const { scene, animations } = useGLTF("/models/monster.glb");
+  // Load the phantom model from the public/models folder - FIXED: using backticks
+  const { scene, animations } = useGLTF(`${basePath}/models/monster.glb`);
   const modelRef = useRef();
   
   // Interactive states
@@ -116,5 +119,5 @@ export default function Phantom(props) {
   );
 }
 
-// Preload the model for performance optimization
-useGLTF.preload("/models/monster.glb");
+// Preload the model for performance optimization - FIXED: using template literal
+useGLTF.preload(`${basePath}/models/monster.glb`);

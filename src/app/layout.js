@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
-import FireFliesBackground from "@/components/FireFliesBackground";
+import ConditionalFireFlies from "@/components/ConditionalFireFlies";
 import Sound from "@/components/Sound";
 
 const inter = Inter({
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         {/* Global/background components */}
-        <FireFliesBackground />
+        <ConditionalFireFlies />
         <Sound />
         {/* Modal placeholder - render modals inside this div */}
         <div id="my-modal" />

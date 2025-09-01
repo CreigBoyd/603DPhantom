@@ -95,10 +95,10 @@ export default function Phantom(props) {
       modelRef.current.scale.y += (targetScale - modelRef.current.scale.y) * 0.1;
       modelRef.current.scale.z += (targetScale - modelRef.current.scale.z) * 0.1;
       
-      // Slow rotation when hovered
-      if (isHovered) {
-        modelRef.current.rotation.y += 0.01;
-      }
+      // REMOVED: Slow rotation when hovered - this was causing the annoying spinning
+      // if (isHovered) {
+      //   modelRef.current.rotation.y += 0.01;
+      // }
     }
   });
 

@@ -101,10 +101,10 @@ export const BtnList = [
     newTab: false,
   },
   {
-    label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
-    icon: "linkedin",
-    newTab: true,
+    label: "Images",
+    link: "/carousel",
+    icon: "camera",
+    newTab: false,
   },
   {
     label: "X",
